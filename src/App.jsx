@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Navbar from './components/Navbar'
+import Landing from './components/Landing'
 
 function App() {
 
@@ -7,9 +8,7 @@ function App() {
     <>
       <div class="main-content">
         <Navbar />
-        <main>
-
-        </main>
+        <Landing/>
       </div>
     </>
   )
