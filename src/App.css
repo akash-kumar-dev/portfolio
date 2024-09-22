@@ -1,0 +1,20 @@
+:root {
+    --darkblue: #161a2e;
+  }
+
+*{
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Outfit', sans-serif;
+  
+}
+
+.main-content{
+  position:absolute;
+}
+
+main{
+    background-color: var(--darkblue);
+    color: rgb(189, 189, 189);
+    margin-top: 75vh;
+    position: relative;
+}

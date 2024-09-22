@@ -1,5 +1,5 @@
 import "./styles/Landing.css";
-import video from "../images/Cyberpunkvid.mp4";
+import video from "../assets/images/Cyberpunkvid.mp4";
 import { Typewriter } from 'react-simple-typewriter';
 import socialLinks from "../config/placeholders/SocialLinks";
 

@@ -1,0 +1,116 @@
+.padding-x {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+@media (min-width: 640px) {
+    .padding-x {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+
+.padding-y {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+@media (min-width: 640px) {
+    .padding-y {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+}
+
+.padding {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+@media (min-width: 640px) {
+    .padding {
+        padding-left: 4rem;
+        padding-right: 4rem;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+}
+
+.hero-head-text {
+    font-weight: 800;
+    color: white;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-top: 0.5rem;
+}
+
+@media (min-width: 640px) {
+    .hero-head-text {
+        font-size: 3.75rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero-head-text {
+        font-size: 5rem;
+        line-height: 1.225;
+    }
+}
+
+.hero-sub-text {
+    color: #dfd9ff;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.25;
+}
+
+@media (min-width: 640px) {
+    .hero-sub-text {
+        font-size: 1.625rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero-sub-text {
+        font-size: 1.875rem;
+    }
+}
+
+.section-head-text {
+    color: white;
+    font-weight: 800;
+    font-size: 1.875rem;
+}
+
+@media (min-width: 640px) {
+    .section-head-text {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .section-head-text {
+        font-size: 3.125rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .section-head-text {
+        font-size: 3.75rem;
+    }
+}
+
+.section-sub-text {
+    font-size: 0.875rem;
+    color: var(--bs-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+@media (min-width: 640px) {
+    .section-sub-text {
+        font-size: 1.125rem;
+    }
+}
