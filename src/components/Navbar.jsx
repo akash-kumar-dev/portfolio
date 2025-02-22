@@ -24,61 +24,61 @@ function Navbar() {
 
   return (
     <nav className={`navbar fixed-top navbar-fixed-top navbar-expand-lg navbar-dark ${show}`}>
-      <div class="container-fluid d-flex">
-        <a class="navbar-brand ps-2 my-name" href="/">
+      <div className="container-fluid d-flex">
+        <a className="navbar-brand ps-2 my-name" href="#landing">
           Akash Kumar
         </a>
 
-        <div class="navbar-collapse collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
+        <div className="navbar-collapse collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav ms-auto">
+            <li className="nav-item">
               <a
-                class="nav-link active nav-effect"
+                className="nav-link active nav-effect"
                 aria-current="page"
                 href="#landing"
               >
                 Home
               </a>
             </li>
-            <li class="nav-item">
+            <li className="nav-item">
               <a
-                class="nav-link active nav-effect"
+                className="nav-link active nav-effect"
                 aria-current="page"
                 href="#about"
               >
                 About
               </a>
             </li>
-            <li class="nav-item">
+            <li className="nav-item">
               <a
-                class="nav-link active nav-effect"
+                className="nav-link active nav-effect"
                 aria-current="page"
                 href="#skills"
               >
                 Skills
               </a>
             </li>
-            <li class="nav-item">
+            <li className="nav-item">
               <a
-                class="nav-link active nav-effect"
+                className="nav-link active nav-effect"
                 aria-current="page"
-                href="#experience"
+                href="#Experience"
               >
                 Experience
               </a>
             </li>
-            <li class="nav-item">
+            <li className="nav-item">
               <a
-                class="nav-link active nav-effect"
+                className="nav-link active nav-effect"
                 aria-current="page"
                 href="#projects"
               >
                 Projects
               </a>
             </li>
-            <li class="nav-item">
+            <li className="nav-item">
               <a
-                class="nav-link active nav-effect contact-nav"
+                className="nav-link active nav-effect contact-nav"
                 aria-current="page"
                 href="#contact"
               >
@@ -88,7 +88,7 @@ function Navbar() {
           </ul>
         </div>
         <button
-          class="navbar-toggler ms-auto"
+          className="navbar-toggler ms-auto"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -96,7 +96,7 @@ function Navbar() {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
       </div>
     </nav>

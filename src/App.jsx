@@ -8,9 +8,11 @@ function App() {
 
   return (
     <>
-      <div class="main-content w-100">
+      <div className="main-content w-100">
         <Navbar />
-        <Landing />
+        <div>
+          <Landing/>
+        </div>
         <main>
           <Experience />
         </main>

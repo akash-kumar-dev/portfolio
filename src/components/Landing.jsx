@@ -1,5 +1,4 @@
 import "./styles/Landing.css";
-import video from "../assets/images/Cyberpunkvid.mp4";
 import { Typewriter } from 'react-simple-typewriter';
 import socialLinks from "../config/placeholders/SocialLinks";
 
@@ -7,71 +6,69 @@ function Landing() {
   const nameObj = { name: " Akash Kumar ", role: "" };
 
   return (
-    <div id="landing">
-      <video class="videoclass" autoPlay="autoplay" muted loop width="100%">
-        <source src={video} type="video/mp4" />
-      </video>
-      <div class="mycontent">
-        <div class="d-flex justify-content-center">
-          <h2>
-            const me = {"{ "}
-            <br /> {"\t name : "} {JSON.stringify(nameObj.name)} {","}
-          </h2>
-        </div>
-        <div class="d-flex justify-content-center">
-          <h2>
-            <div className="d-flex">
-              <div className="pe-2">role : </div>
-              <div className="my-roles">
-                <div className='App'>
-                  {' '}
-                  <span style={{ color: 'red', fontWeight: 'bold' }}>
-                    {/* Style will be inherited from the parent element */}
-                    <Typewriter
-                      words={['"Open Source Developer"', '"Software Developer"', '"CyberSecurity enthusiast"', '"Web Developer"']}
-                      loop={true}
-                      cursor
-                      cursorStyle='_'
-                      typeSpeed={70}
-                      deleteSpeed={50}
-                      delaySpeed={1000}
-                    // onLoopDone={handleDone}
-                    // onType={handleType}
-                    />
-                  </span>
-                </div>
-              </div>
-              {" \n}"}
+    <div id="landing" className="landing-container">
+      <div className="background-effect">
+        <div className="gradient-bg"></div>
+        <div className="spotlight spotlight-1"></div>
+        <div className="spotlight spotlight-2"></div>
+        <div className="spotlight spotlight-3"></div>
+      </div>
+      
+      <div className="glass-container">
+        <div className="content-wrapper">
+          <div className="code-block">
+            <div className="code-line">
+              <span className="keyword">const</span>
+              <span className="variable"> developer</span>
+              <span className="operator"> = </span>
+              <span className="bracket">{'{'}</span>
             </div>
-          </h2>
-        </div>
+            
+            <div className="code-line indented">
+              <span className="property">name:</span>
+              <span className="string"> "{nameObj.name}"</span>
+              <span className="comma">,</span>
+            </div>
+            
+            <div className="code-line indented">
+              <span className="property">role:</span>
+              <span className="string">
+                <Typewriter
+                  words={[
+                    '"Open Source Developer"',
+                    '"Software Developer"',
+                    '"CyberSecurity Enthusiast"',
+                    '"Web Developer"'
+                  ]}
+                  loop={true}
+                  cursor
+                  cursorStyle='|'
+                  typeSpeed={70}
+                  deleteSpeed={50}
+                  delaySpeed={1000}
+                />
+              </span>
+            </div>
+            
+            <div className="code-line">
+              <span className="bracket">{'}'}</span>
+            </div>
+          </div>
 
-        <div class="d-flex landing-icons">
-          {
-            socialLinks.map((link) => {
-              const classes = "fab p-3 " + link.icon;
-
-              return (
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href={link.url}
-                  key={link.name}
-                >
-                  {link.icon ? (
-                    <i className={classes}></i>
-                  ) : (
-                    <img
-                      src={link.img}
-                      alt={link.name}
-
-                    />
-                  )}
-
-                </a>
-              );
-            })
-          }
+          <div className="social-links">
+            {socialLinks.map((link) => (
+              <a
+                href={link.url}
+                key={link.name}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-icon-wrapper"
+              >
+                <i className={link.icon}></i>
+                <span className="icon-tooltip">{link.name}</span>
+              </a>
+            ))}
+          </div>
         </div>
       </div>
     </div>

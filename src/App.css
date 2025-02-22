@@ -15,6 +15,6 @@
 main{
     background-color: var(--darkblue);
     color: rgb(189, 189, 189);
-    margin-top: 75vh;
+    /* margin-top: 75vh; */
     position: relative;
 }
