@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Navbar from './components/Navbar'
 import Landing from './components/Landing'
 import Experience from './components/Experience'
+import About from './components/About'
 import "./App.css";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
         <Navbar />
         <div>
           <Landing/>
+          <About/>
         </div>
         <main>
           <Experience />
