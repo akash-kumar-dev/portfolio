@@ -1,0 +1,141 @@
+.footer {
+  background: linear-gradient(to bottom, #080810, #050508);
+  padding: 2rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(132, 251, 255, 0.3),
+    transparent
+  );
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.footer-name {
+  font-family: 'Major Mono Display', monospace;
+  font-size: 2rem;
+  color: rgb(204, 245, 255);
+  animation: flicker 1.5s infinite alternate;
+  margin-bottom: 1rem;
+}
+
+@keyframes flicker {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    text-shadow:
+      0 0 7px rgb(210, 242, 255),
+      0 0 10px rgb(186, 236, 255),
+      0 0 21px rgb(147, 251, 255),
+      0 0 42px rgb(0, 183, 255),
+      0 0 82px rgb(0, 195, 255),
+      0 0 92px rgb(0, 110, 255),
+      0 0 102px rgb(0, 195, 255),
+      0 0 151px rgb(0, 153, 255);
+  }
+  
+  20%, 24%, 55% {        
+    text-shadow: none;
+  }    
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.social-link {
+  color: rgba(132, 251, 255, 0.7);
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  color: #84fbff;
+  filter: drop-shadow(0 0 8px rgba(132, 251, 255, 0.5));
+}
+
+.copyright {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: linear-gradient(135deg, #0a0a1a, #1a1a3a);
+  border: 2px solid rgba(132, 251, 255, 0.3);
+  border-radius: 50%;
+  width: 3.5rem;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  color: rgba(132, 251, 255, 0.8);
+  font-size: 1.5rem;
+  box-shadow: 0 0 20px rgba(132, 251, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.scroll-to-top:hover {
+  border-color: rgba(132, 251, 255, 0.5);
+  color: rgba(132, 251, 255, 1);
+  box-shadow: 
+    0 0 30px rgba(132, 251, 255, 0.2),
+    0 0 60px rgba(132, 251, 255, 0.1);
+}
+
+.scroll-to-top i {
+  animation: floatUpDown 2s ease-in-out infinite;
+}
+
+@keyframes floatUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 1.5rem 0;
+  }
+  
+  .footer-name {
+    font-size: 1.5rem;
+  }
+  
+  .social-link {
+    font-size: 1.2rem;
+  }
+  
+  .scroll-to-top {
+    bottom: 1.5rem;
+    right: 1.5rem;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.2rem;
+  }
+} 

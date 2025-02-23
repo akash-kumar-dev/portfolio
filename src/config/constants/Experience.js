@@ -22,7 +22,7 @@ const experiences = [
     company_name: "E-Cell IIT Bombay",
     icon: ECell_IITB,
     iconBg: "#383E56",
-    date: "July 2024 - Present",
+    date: "July 2024 - November 2024",
     points: [
       "Played a key role in fostering an entrepreneurial mindset among students, bridging the gap between academia and the startup ecosystem.",
       "Led various initiatives, developing leadership and team management skills while promoting innovation-driven activities.",

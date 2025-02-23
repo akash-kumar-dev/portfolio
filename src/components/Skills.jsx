@@ -3,34 +3,34 @@ import "./styles/Skills.css";
 
 const skillCategories = [
   {
-    title: "Frontend Development",
+    title: "Core Programming",
     icon: "bx bx-code-alt",
-    skills: ["React.js", "Next.js", "HTML5", "CSS3", "JavaScript", "Bootstrap"]
+    skills: ["C++", "Java", "Python", "Data Structures", "Algorithms"]
   },
   {
-    title: "Backend Development",
-    icon: "bx bx-server",
-    skills: ["Node.js", "Express.js", "PHP", "Laravel", "RESTful APIs"]
+    title: "Web Development",
+    icon: "bx bx-code-block",
+    skills: ["React.js", "Next.js", "Node.js", "Express.js", "PHP", "Laravel"]
   },
   {
-    title: "Database & Storage",
+    title: "Cloud & DevOps",
+    icon: "bx bx-cloud",
+    skills: ["AWS", "Serverless (Hono)", "Monorepo", "Docker", "Git"]
+  },
+  {
+    title: "Database Technologies",
     icon: "bx bx-data",
     skills: ["MySQL", "MongoDB", "MariaDB", "Prisma ORM", "Redis"]
   },
   {
-    title: "DevOps & Cloud",
-    icon: "bx bx-cloud",
-    skills: ["AWS", "Docker", "CI/CD", "Git", "Serverless"]
+    title: "Real-Time & APIs",
+    icon: "bx bx-broadcast",
+    skills: ["WebSockets", "WebRTC", "RESTful APIs", "API Integration"]
   },
   {
-    title: "Core Programming",
-    icon: "bx bx-terminal",
-    skills: ["C++", "Java", "Python", "Data Structures", "Algorithms"]
-  },
-  {
-    title: "Security & Networking",
+    title: "Security & Systems",
     icon: "bx bx-shield-quarter",
-    skills: ["Wireshark", "Burp Suite", "Nmap", "Network Protocols", "Linux"]
+    skills: ["Wireshark", "Burp Suite", "Nmap", "Linux (Arch, Kali)", "Bash"]
   }
 ];
 

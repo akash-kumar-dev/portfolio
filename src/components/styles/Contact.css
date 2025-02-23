@@ -1,0 +1,211 @@
+.contact-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0a0a1a 0%, #1a1a3a 100%);
+  padding: 6rem 2rem;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 50% 50%, rgba(132, 251, 255, 0.1) 0%, transparent 50%);
+}
+
+.contact-content {
+  max-width: 1200px;
+  width: 100%;
+  margin: 2rem auto;
+  position: relative;
+  z-index: 1;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.contact-animation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.envelope-3d {
+  font-size: 8rem;
+  color: rgba(132, 251, 255, 0.8);
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.envelope-3d i {
+  filter: drop-shadow(0 0 15px rgba(132, 251, 255, 0.3));
+}
+
+.connecting-lines {
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background: 
+    radial-gradient(circle at center, rgba(132, 251, 255, 0.1) 0%, transparent 70%),
+    linear-gradient(45deg, rgba(132, 251, 255, 0.1) 0%, transparent 70%);
+  animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.contact-text {
+  text-align: center;
+  color: #fff;
+}
+
+.contact-text h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(90deg, #fff, #84fbff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-text p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.contact-form-container {
+  width: 100%;
+  max-width: none;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-input {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(132, 251, 255, 0.2);
+  border-radius: 12px;
+  padding: 1rem;
+  color: #fff;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: rgba(132, 251, 255, 0.4);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 15px rgba(132, 251, 255, 0.1);
+}
+
+.message-input {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 1rem;
+  background: linear-gradient(45deg, rgba(132, 251, 255, 0.1), rgba(3, 183, 192, 0.2));
+  border: 1px solid rgba(132, 251, 255, 0.2);
+  border-radius: 12px;
+  color: #fff;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.submit-button:hover {
+  background: linear-gradient(45deg, rgba(132, 251, 255, 0.2), rgba(3, 183, 192, 0.3));
+  border-color: rgba(132, 251, 255, 0.4);
+  box-shadow: 0 0 20px rgba(132, 251, 255, 0.15);
+}
+
+.submit-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.submit-button i {
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.submit-button:hover i {
+  transform: translateX(5px);
+}
+
+.form-result {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 12px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.form-result.success {
+  background: rgba(39, 174, 96, 0.1);
+  border: 1px solid rgba(39, 174, 96, 0.3);
+  color: #2ecc71;
+}
+
+.form-result.error {
+  background: rgba(231, 76, 60, 0.1);
+  border: 1px solid rgba(231, 76, 60, 0.3);
+  color: #e74c3c;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 968px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .contact-animation {
+    display: none;
+  }
+
+  .contact-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 4rem 1rem;
+  }
+  
+  .contact-form-container {
+    padding: 1.5rem;
+  }
+  
+  .form-input {
+    font-size: 0.9rem;
+  }
+  
+  .submit-button {
+    font-size: 1rem;
+  }
+} 
