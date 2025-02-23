@@ -4,6 +4,7 @@ import Landing from './components/Landing'
 import Experience from './components/Experience'
 import About from './components/About'
 import Skills from './components/Skills'
+import Projects from './components/Projects'
 import "./App.css";
 
 function App() {
@@ -14,11 +15,12 @@ function App() {
         <Navbar />
         <div>
           <Landing/>
-          <About/>
         </div>
         <main>
+          <About/>
           <Skills />
           <Experience />
+          <Projects />
         </main>
       </div>
     </>
