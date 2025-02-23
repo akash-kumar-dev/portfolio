@@ -1,19 +1,20 @@
 import { motion } from "framer-motion";
 import "./styles/Projects.css";
+import { CampusConnectImg, PortfolioImg } from "../assets/images";
 
 const projects = [
   {
     title: "CampusConnect",
     description: "A marketplace exclusively for college students. A platform for connecting college students, allowing seniors to list items for sale or donation to juniors.",
-    image: "/src/assets/images/CampusConnect.png",
+    image: CampusConnectImg,
     techStack: ["TurboRepo", "Prisma ORM", "PostgreSQL", "Next.js", "NextAuth", "Tailwind CSS"],
     liveUrl: "https://acampusconnect.vercel.app",
     githubUrl: "https://github.com/akash-kumar-dev/CampusConnect",
   },
   {
     title: "Portfolio",
-    description: "A personal website showcasing my projcects, skills, and professional experience.",
-    image: "/src/assets/images/image.png",
+    description: "A personal website showcasing my projects, skills, and professional experience.",
+    image: PortfolioImg,
     techStack: ["React.js", "Framer Motion", "Bootstrap", "CSS3"],
     liveUrl: "https://akashkumar-dev.vercel.app",
     githubUrl: "https://github.com/akash-kumar-dev/portfolio",
