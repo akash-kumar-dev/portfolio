@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import "./styles/About.css";
 
 const About = () => {
-  const resumeLink = "https://drive.google.com/file/d/1lembV8WOlzebjPqvgqiXY__v1H9rXsyy/view?usp=sharing";
+  const resumeLink = "https://drive.google.com/file/d/1E_UGfi9rw2s-Ec0uPeWdaAgS0QbkfnyE/view?usp=sharing";
 
   const storyBlocks = [
     {
