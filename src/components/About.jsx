@@ -8,7 +8,7 @@ const About = () => {
     {
       title: "The Journey",
       icon: "bx bx-map",
-      content: "As a pre-final year student at NIT Uttarakhand, my path has been anything but conventional. Despite being in Electrical & Electronics Engineering, my heart found its true calling in the world of software development and cybersecurity.",
+      content: "As a final year Engineering student at NIT Uttarakhand, my path has been anything but conventional. Despite being in Electrical & Electronics Engineering, my heart found its true calling in the world of software development and cybersecurity.",
     },
     {
       title: "The Passion",

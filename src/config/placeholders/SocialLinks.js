@@ -2,7 +2,7 @@ const socialLinks = [
   {
     name: "LinkedIn",
     icon: "bx bxl-linkedin-square",
-    url: "https://www.linkedin.com/in/akash-kumar-nituk/",
+    url: "https://www.linkedin.com/in/akashkumar-dev/",
   },
   {
     name: "Github",

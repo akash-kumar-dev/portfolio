@@ -31,14 +31,15 @@ function Landing() {
             </div>
             
             <div className="code-line indented">
-              <span className="property">role:</span>
+              <span className="property">role: </span>
               <span className="string">
                 <Typewriter
                   words={[
-                    '"Open Source Developer"',
-                    '"Software Developer"',
-                    '"CyberSecurity Enthusiast"',
-                    '"Web Developer"'
+                    '" Open Source Developer "',
+                    '" Software Developer "',
+                    '" CyberSecurity Enthusiast "',
+                    '" Web Developer "',
+                    '" Web3/Blockchain Developer "',
                   ]}
                   loop={true}
                   cursor
