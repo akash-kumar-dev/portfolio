@@ -1,25 +1,6 @@
 import { motion } from "framer-motion";
 import "./styles/Projects.css";
-import { CampusConnectImg, PortfolioImg } from "../assets/images";
-
-const projects = [
-  {
-    title: "CampusConnect",
-    description: "A marketplace exclusively for college students. A platform for connecting college students, allowing seniors to list items for sale or donation to juniors.",
-    image: CampusConnectImg,
-    techStack: ["TurboRepo", "Prisma ORM", "PostgreSQL", "Next.js", "NextAuth", "Tailwind CSS"],
-    liveUrl: "https://acampusconnect.vercel.app",
-    githubUrl: "https://github.com/akash-kumar-dev/CampusConnect",
-  },
-  {
-    title: "Portfolio",
-    description: "A personal website showcasing my projects, skills, and professional experience.",
-    image: PortfolioImg,
-    techStack: ["React.js", "Framer Motion", "Bootstrap", "CSS3"],
-    liveUrl: "https://akashkumar-dev.vercel.app",
-    githubUrl: "https://github.com/akash-kumar-dev/portfolio",
-  }
-];
+import projects from "../config/placeholders/projects";
 
 const Projects = () => {
   return (
@@ -56,14 +37,18 @@ const Projects = () => {
               <div className="project-header">
                 <h3>{project.title}</h3>
                 <div className="project-links">
-                  <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="project-link">
-                    <i className='bx bxl-github'></i>
-                    <span>GitHub</span>
-                  </a>
-                  <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="project-link">
-                    <i className='bx bx-link-external'></i>
-                    <span>Live Demo</span>
-                  </a>
+                  {project.githubUrl && (
+                    <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="project-link">
+                      <i className='bx bxl-github'></i>
+                      <span>GitHub</span>
+                    </a>
+                  )}
+                  {project.liveUrl && (
+                    <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="project-link">
+                      <i className='bx bx-link-external'></i>
+                      <span>Live Demo</span>
+                    </a>
+                  )}
                 </div>
               </div>
               
@@ -94,4 +79,4 @@ const Projects = () => {
   );
 };
 
-export default Projects; 
+export default Projects;

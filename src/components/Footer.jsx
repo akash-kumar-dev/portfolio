@@ -1,30 +1,9 @@
 import { motion } from "framer-motion";
 import "./styles/Footer.css";
 import { useState, useEffect } from "react";
+import socialLinks from "../config/placeholders/SocialLinks"; 
 
 const Footer = () => {
-  const socialLinks = [
-    {
-      name: "GitHub",
-      icon: "bx bxl-github",
-      url: "https://github.com/akash-kumar-dev"
-    },
-    {
-      name: "LinkedIn",
-      icon: "bx bxl-linkedin",
-      url: "https://linkedin.com/in/akash-kumar-dev"
-    },
-    {
-      name: "Twitter",
-      icon: "bx bxl-twitter",
-      url: "https://twitter.com/akash_kumar_dev"
-    },
-    {
-      name: "Email",
-      icon: "bx bx-envelope",
-      url: "mailto:akashkumar.dev00@.com"
-    }
-  ];
 
   const ScrollToTop = () => {
     const [isVisible, setIsVisible] = useState(false);
